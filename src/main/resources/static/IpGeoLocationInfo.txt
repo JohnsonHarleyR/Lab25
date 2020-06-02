@@ -1,0 +1,59 @@
+IP Geo Location
+
+endpoint:
+
+GET:  /ip/{ip}?format={format}&amp;flter={filter}
+
+{
+    "status": "success",
+    "ip":"37.140.128.10",
+    "type":"IPv4",
+    "city":{
+        "name":"Moscow",
+        "population":10381222,
+        "geonameid":524901
+    },
+    "area":{
+        "code":"MOW",
+        "name":"Moscow"
+    },
+    "country":{
+        "code":"RU",
+        "name":"Russia",
+        "phone_code":"7",
+        "area_size":"17100000.00 sq. km",
+        "capital":"Moscow",
+        "population":140702000,
+        "is_in_eu":false,
+        "geonameid":2017370
+    },
+    "time":{
+        "timezone":"Europe/Moscow",
+        "time":"2019-01-24 15:17:07 +0300",
+        "gtm_offset":10800
+    },
+    "asn":{
+        "organisation":"YANDEX LLC",
+        "number":13238
+    },
+    "currency":{
+        "code":"RUB",
+        "name":"Russian Ruble"
+    },
+    "location":{
+        "latitude":55.7522,
+        "longitude":37.6156
+    },
+    "security":{
+        "is_tor":false,
+        "is_proxy":false,
+        "is_thread":false,
+        "is_crawler":false
+    },
+    "continent":{
+        "code":"EU",
+        "name":"Europe",
+        "geonameid":6255148
+    },
+    "postcode":"102087"
+}
