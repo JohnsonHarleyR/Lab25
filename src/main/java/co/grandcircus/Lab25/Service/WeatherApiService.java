@@ -1,5 +1,7 @@
 package co.grandcircus.Lab25.Service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -56,7 +58,21 @@ public class WeatherApiService {
 	public void setUrl(String url) {
 		this.url = url;
 	}
-
+	
+	//I think I'm starting to get it finally
+	
+	public List<String> getIconLinks(String startPeriod, Time time) {
+		
+		String newUrl = url + "&startPeriodName={startPeriod}";
+		WeatherResponse response = rest.getForObject(url, WeatherResponse.class,
+				lat, lon);
+		
+		//String iconUrl = 
+		
+		return response.getData().getIconLink();
+	}
+	
+	
 	public Data getData() {
 		WeatherResponse response = rest.getForObject(url, WeatherResponse.class,
 				lat, lon);
